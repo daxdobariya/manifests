@@ -4,6 +4,7 @@ metadata:
   name: nginx-service
   labels:
     app: nginx-service 
+  namespace: nginx
 spec:
   type: NodePort
   selector:

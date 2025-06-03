@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      name: nginx-container
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx-container
+        image: vivekdalsaniya/facelog
+        ports:
+        - containerPort: 8000

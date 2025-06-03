@@ -4,7 +4,7 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
-  namespace: nginx
+  namespace: nginx-ns
 spec:
   replicas: 3
   selector:
@@ -20,4 +20,11 @@ spec:
       - name: nginx-container
         image: vivekdalsaniya/facelog
         ports:
-        - containerPort: 8000
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "250m"
+            memory: "256Mi"

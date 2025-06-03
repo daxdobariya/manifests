@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: nginx:latest
+        image: vivekdalsaniya/facelog
         ports:
-        - containerPort: 80
+        - containerPort: 8000

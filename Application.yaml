@@ -3,11 +3,6 @@ kind: Application
 metadata:
   name: nginx-argocd
   namespace: argocd
-  annotations:
-    # This tells Image Updater what to watch
-    argocd-image-updater.argoproj.io/image-list: docker.io/vivekdalsaniya/doctor_finder
-    argocd-image-updater.argoproj.io/yourname_myapp.update-strategy: latest
-    argocd-image-updater.argoproj.io/vivekdalsaniya_doctor_finder.allow-tags: regexp:^\\d+$
 spec:
   project: default
   source: 

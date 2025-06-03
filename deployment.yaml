@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: docker.io/vivekdalsaniya/doctor_finder:110
+        image: docker.io/vivekdalsaniya/doctor_finder:112
         ports:
         - containerPort: 8000
         resources:

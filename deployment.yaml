@@ -18,9 +18,9 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: vivekdalsaniya/facelog
+        image: vivekdalsaniya/doctor_finder:110
         ports:
-        - containerPort: 80
+        - containerPort: 8000
         resources:
           requests:
             cpu: "100m"

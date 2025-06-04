@@ -8,6 +8,9 @@ This project demonstrates a full CI/CD pipeline using **Jenkins**, **Docker**, *
 
 ---
 
+![diagram-export-6-4-2025-11_49_15-PM](https://github.com/user-attachments/assets/d874468b-1a62-47ef-99b0-dd26b473bd71)
+
+
 ## 🔧 Prerequisites
 
 Make sure you have the following installed on your system:

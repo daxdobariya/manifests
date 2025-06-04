@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: docker.io/vivekdalsaniya/nginx-web:1
+        image: docker.io/vivekdalsaniya/nginx-web:33
         ports:
         - containerPort: 80
         resources:
